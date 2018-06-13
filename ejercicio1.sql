@@ -1,6 +1,6 @@
 DELIMITER $$
   DROP PROCEDURE IF EXISTS ejercicio1 $$
-  CREATE PROCEDURE ejercicio1 (IN pais VARCHAR(20), OUT numero INTEGER)
+  CREATE PROCEDURE ejercicio1 (IN pais VARCHAR(20), OUT numero INT)
   BEGIN
   DECLARE file_name VARCHAR(100);
   SET file_name = CONCAT("C:/Users/Erik/Desktop/pais_", pais, ".txt");
